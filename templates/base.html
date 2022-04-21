@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fayyozjon Usmonov</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css">  -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">WEL<span>COME</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+     <!-- home section  -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h5>Hello, I am</h5>
+            <h1>Fayyozjon Usmonov</h1>
+            <h6>I am a Data<span> Scientist</span></h6>
+            <p>I solve the hard problems by Machine Learning and Deep Learning</p>
+            <a href="{{ url_for('static', filename='CV_April.pdf') }}" download="Fayyozjon_Usmonov_DS" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <!-- <link rel="stylesheet" href=""/> -->
+            <img src="{{ url_for('static', filename='img.png') }}" alt="profile">
+        </div>
+    </section>
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='1stul.png') }}" alt="prole">
+        </div>
+        <div class="about-text">
+            <h3>ABOUT ME</h3>
+            <h2>I am a passionate Data Scientist with engineering experience</h2>
+            <p>I code and improve AI role in the unsafe field for people. I like challenges and solve hard math problems.
+                I like to work with new people. New people-New experience
+            </p>
+            <div class="count">
+                <a href=""><span>ExPeRiEnCe</span> with MATH and Physics</a>
+                <a href=""><span>ExPeRiEnCe</span> as a Tutor</a>
+            </div>
+            <div class="main-btn">
+                <a href="#contact" class="btn">Contact Me</a>
+                <!-- <a href="#" class="btn">Portfolio</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- projects section  -->
+    <section class="projects" id="projects">
+        <div class="center">
+            <h3>WHAT I DID SO FAR..</h3>
+        </div>
+        <div class="projects-content">
+            <div class="row">
+                <!-- <box-icon type='solid' name='bot'></box-icon> -->
+                <i class="bx bx-bot"></i>
+                <h3>Emotion Detector</h3>
+                <h4 class="card-title" style="color:#2fbf71; padding-bottom: 7px;">Technologies:</h4>
+                <div class="olma" style="padding-left: 20px;">
+                    <ul>
+                        <li style="padding-bottom: 3px;">PyTorch</li>
+                        <li style="padding-bottom: 3px;">OpenCV</li>
+                        <li style="padding-bottom: 7px;">Numpy</li>
+                    </ul>
+                </div>
+                <p>it will predict the emotion by using opencv.</p>
+                <a href="https://github.com/fayyoz24/Build_week3" style="text-align: end;" target="blank">source code..</a>
+            </div>
+            <div class="row">
+                <!-- <box-icon type='solid' name='bot'></box-icon> -->
+                <i class="bx bx-data"></i>
+                <h3>Web Scrapping</h3>
+                <h4 class="card-title" style="color:#2fbf71; padding-bottom: 7px;">Technologies:</h4>
+                <div class="olma" style="padding-left: 20px;">
+                    <ul>
+                        <li style="padding-bottom: 3px;">Selenium</li>
+                        <li style="padding-bottom: 3px;">Pandas</li>
+                        <li style="padding-bottom: 7px;">Streamlit</li>
+                    </ul>
+                </div>
+                <p>I got 1000 of books datas by selenium and Beautifulsoup.</p>
+                <a href="https://github.com/fayyoz24/1000_books_streamlit" style="text-align: end;" target="blank">source code..</a>
+            </div>
+            <div class="row">
+                <!-- <box-icon type='solid' name='bot'></box-icon> -->
+                <i class="bx bx-spreadsheet"></i>
+                <h3>Titanic surviving prediction</h3>
+                <h4 class="card-title" style="color:#2fbf71; padding-bottom: 7px;">Technologies:</h4>
+                <div class="olma" style="padding-left: 20px;">
+                    <ul>
+                        <li style="padding-bottom: 3px;">Scikit-Learn</li>
+                        <li style="padding-bottom: 3px;">Pandas</li>
+                        <li style="padding-bottom: 7px;">Streamlit</li>
+                    </ul>
+                </div>
+                <p>predicting survive chance in Titanic, you can check yourself.</p>
+                <a href="https://github.com/fayyoz24/Titanic_survived" style="text-align: end;" target="blank">source code..</a>
+            </div>
+            <div class="row">
+                <!-- <box-icon type='solid' name='bot'></box-icon> -->
+                <i class="bx bx-bot"></i>
+                <h3>ChatBot</h3>
+                <h4 class="card-title" style="color:#2fbf71; padding-bottom: 7px;">Technologies:</h4>
+                <div class="olma" style="padding-left: 20px;">
+                    <ul>
+                        <li style="padding-bottom: 3px;">Nltk</li>
+                        <li style="padding-bottom: 3px;">Keras</li>
+                        <li style="padding-bottom: 7px;">Flask</li>
+                    </ul>
+                </div>
+                <p>You can get more information, and save your time</p>
+                <a href="" style="text-align: end;" target="blank">working on it..</a>
+            </div>
+        </div>
+    </section>
+    <!--suggestions section -->
+    <section class="cta">
+        <h4>Have Any Suggestion or Feedback</h4>
+        <h2>Just Say Hello!</h2>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+     <!-- resume section   -->
+    <section class="resume" id="resume">
+        <div class="center">
+            <h3>Education & experience</h3>
+        </div>
+        <div class="resume-content">
+            <div class="box">
+                <h6>Nov 2021 - present</h6>
+                <h4>Data Science</h4>
+                <p>I am learning everything related to Data Science and Machine Learning</p>
+                <h5>EPICODE global (former Strive school)</h5>
+            </div>
+            <div class="box">
+                <h6>Oct 2019 - present</h6>
+                <h4>IT Management</h4>
+                <p>I am studying for my master's while learning data science</p>
+                <h5>University of Social of Sciences</h5>
+            </div>   
+            <div class="box">
+                <h6>Sep 2014 - June 2018</h6>
+                <h4>Automatical Engineering</h4>
+                <p>I am the holder of Automatical Enginner diploma which is related to my current job</p>
+                <h5>Tashkent State Technical University</h5>
+            </div>
+            <div class="box">
+                <h6>August 2018 - January 2019</h6>
+                <h4>R&D enginner</h4>
+                <p>I was an enginner at the heart of the company and we imporoved for 30% the eficiency of the washing machine engine</p>
+                <h5>Artel group</h5>
+            </div>
+            <div class="box">
+                <h6>2015 March - 2017 April</h6>
+                <h4>Math and Physics Tutor</h4>
+                <p>I thought more than 200 students for Maths and Physics</p>
+                <h5>Private</h5>
+            </div>
+        </div>
+    </section>
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+        <div class="center">
+            <h3>Contact Me</h3>
+        </div>
+        <div class="contact-form">
+            <form action="/contact" method="POST">
+                <input name = "name" type="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="text" cols="30" rows="10" placeholder="I saw your projects and really like it!" required></textarea>
+                <input type="submit" name="" value="Send" class="send-btn">
+            </form>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
